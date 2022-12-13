@@ -1,0 +1,3 @@
+The fetch execution cycle:
+	The CPU reads in instructions from memory
+	and executes them one at a time.
