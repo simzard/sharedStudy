@@ -1,3 +1,23 @@
+The data bus:
+	The connection pins between the CPU and memory (RAM).
+	It is like a transport mechanism when data is sent between CPU and memory.
+
 The fetch execution cycle:
 	The CPU reads in instructions from memory
 	and executes them one at a time.
+
+	1. The Program Counter (PC) register contains a number,
+	   which is the address of the next instruction (which is also a number)
+	   to be executed.
+
+	2. The CPU fetches the next instruction number from memory(pointed to by PC)
+	   via the data bus and passes it to the instruction decoder, which decodes
+           the number into some instruction.
+
+	3. Depending on the decoded instruction, the CPU uses it's registers for 
+	   temporary storage of the data, before it is passed back to the memory via
+	   the data bus.  
+
+	4. For the actual calculation to happen, the data is passed along to the 
+	   Arithmetical Logical Unit (ALU), which is a part of the CPU. 
+	   Addition, subtraction, multiplication, division, etc. 
